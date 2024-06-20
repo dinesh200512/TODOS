@@ -12,8 +12,6 @@ def load_todos(filename):
                     todos.append(parts[1].strip())
     except FileNotFoundError:
         print(f"{filename} does not exist. A new file will be created.")
-        with open(filename, 'w') as f:
-            pass
 
 # Function to save todos to the file
 def save_todos(filename):
